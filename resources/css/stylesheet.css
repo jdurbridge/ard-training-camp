@@ -744,7 +744,7 @@ footer {
     border-bottom: 2px solid rgb(252, 224, 8);
 }
 
-/* HELLWEEK CLASS PAGE --------------------------------------------- */
+/* CLASS PAGE (template styling for all) --------------------------------------------- */
 
 .class-page .grid-container {
     flex-direction: row;
@@ -776,4 +776,21 @@ footer {
     display: block;
     height: 1100px;
     object-fit: cover;
+}
+
+.class-page a {
+    text-decoration: none;
+    color: rgba(52, 13, 135, 0.3);
+    font-size: 1.5rem;
+}
+
+/* FAQs page ---------------------------------------------------------------------- */
+
+.faq-page {
+    margin: 6em auto 3rem;
+    max-width: 900px;
+}
+
+.faq-page h1 {
+    color: rgb(0, 79, 110);
 }
