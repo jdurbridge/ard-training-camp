@@ -213,7 +213,7 @@ footer {
 
 /* CLASSES (homepage teaser and classes page) */
 .classes h1 {
-    color: rgb(0, 79, 110)
+    color: rgb(0, 79, 110);
 }
 
 .class-box {
@@ -411,6 +411,7 @@ footer {
 
 .main-classes h1 {
     color: rgb(0, 79, 110);
+    margin-top: 7rem;
 }
 
 .classes-cta {
@@ -548,6 +549,7 @@ footer {
     .contact-form {
         flex-direction: column;
         margin-left: 0;
+        padding: 1rem;
     }
 
     .formleft,
