@@ -14,6 +14,10 @@ h1 {
     color: rgb(254, 231, 57);
     }
 
+h2 {
+    font-size: 3rem;
+}
+
 /* Colours 
 
 Blue 
@@ -56,7 +60,7 @@ header {
     font-weight: bold;
     font-size: 2rem;
     margin: 0 2rem;
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
     float: left;
 }
 
@@ -74,9 +78,9 @@ header ul {
 header ul a {
     text-decoration: none;
     color: rgb(0, 79, 110);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     display: block;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
 
 header ul a:hover {
@@ -95,13 +99,11 @@ header ul {
 /* FOOTER */
 footer {
     background-color:white;
-    padding: 1px;
 }
+
 /* Copyright group ------- */
 .footer-copyright {
     padding: 2rem;
-    flex-basis: 30%;
-    text-align: center;
 }
 
 .footer-copyright a {
@@ -112,42 +114,6 @@ footer {
 .footer-copyright a:hover {
     color: coral;
 }
-
-/* Social group ------- */
-.footer-social {
-    flex-basis: 30%;
-    margin: auto;
-    text-align: center;
-}
-
-.footer-social a {
-    color: black;
-    padding: 1rem;
-    font-size: 1.5rem;
-}
-
-.footer-social a:hover {
-    color: rgb(254, 231, 57);
-}
-
-/* Links group ------- */
-.footer-links {
-    flex-basis: 30%;
-    margin: auto;
-    text-align: center;
-}
-    
-.footer-links a {
-    color: #000;
-    text-decoration: none;
-    padding: 2rem;
-    
-}
-
-.footer-links a:hover {
-    color: rgb(254, 231, 57);
-}
-
 
 /* CONTAINER & GRID SECTION */
 
@@ -160,7 +126,6 @@ footer {
 .grid-container {  /* This creates a grid */
     margin: 2rem auto;
     padding: 1rem;
-   
 }
 
 .grid-container img {
@@ -199,21 +164,18 @@ footer {
 
 .intro h1 {
     font-size: 8rem;
+    margin-bottom: 3rem;
 }
-.intro h3 {
+.intro h2 {
     color: white;
-}
-
-@media (max-width: 600px) {
-    .intro h1 {
-        font-size: 4rem;
-    }
+    margin-bottom: 3rem;
 }
 
 .intro-btn {
     background-color: rgb(254, 231, 57);
     color:rgb(0, 79, 110);
     border: solid;
+    border-radius: 10px;
     font-size: 1.2rem;
     padding: 1rem 2rem;
     margin-bottom: 2rem;
@@ -262,6 +224,7 @@ footer {
     background-color: rgb(254, 231, 57);
     color: rgba(0, 79, 110, 1);
     border: rgb(254, 231, 57);
+    border-radius: 10px;
     height: 2rem;
     width: 25rem;
     font-size: 1.2rem;
@@ -276,12 +239,6 @@ footer {
     transform: scale(1.1);
 }
 
-
-@media (max-width: 600px) {
-    .all-class-btn {
-        max-width: 80%;
-    }
-}
 
 /* CONTACT DETAILS (homepage snippet) */
 
@@ -322,16 +279,6 @@ footer {
     border-radius: 5px;
 }
 
-@media (max-width: 600px) {
-    .contact-map {
-        flex-grow: 1;
-        max-width: 80%;
-    }
-
-    .contact-map iframe {
-        max-width: 100%;
-    }
-}
 
 /* NEWS SECTION */
 
@@ -340,41 +287,18 @@ footer {
     padding: 1rem;
 }
 
-.news img {
-    max-height: 120px;
+.news-line {
+    width: 80%;
+    border-bottom: 2px solid white;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  
 }
 
-.news-1 {
-    flex-basis: 20%;
-    background-color:white;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.news-2 {
-    flex-basis: 20%;
-    background-color:white;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.news-3 {
-    flex-basis: 20%;
-    background-color:white;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.news-4 {
-    flex-basis: 20%;
-    background-color:white;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.news a {
+.news-line a {
+    font-size: 2rem;
+    color: #f3f3f3;
     text-decoration: none;
-    color: rgb(0, 79, 110)
 }
 
 .news a:hover {
@@ -390,9 +314,9 @@ footer {
 
 
 /* ABOUT PAGE -------------------------------------------------------------*/
-.about .grid-container {
+.about-container {
     margin-top: 3rem;
-    padding: 2rem;
+    display: flex;
 }
 
 .about-intro {
@@ -412,20 +336,12 @@ footer {
 .about-logo {
     background-color: white;
     flex-basis: 30%;
+    text-align: center;
 }
 
 .about-logo img {
     max-width: 125px;
     padding: 4rem;
-}
-
-
-.about h3 {
-    color: white;
-}
-
-.about p {
-    color: white;
 }
 
 .coaches {
@@ -454,6 +370,16 @@ footer {
     margin: 1rem;
 }
 
+@media (max-width: 600px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-intro p {
+        width: 90%;
+    }
+}
+
 /* CLASSES PAGE ---------------------------------------------------------- */ 
 
 .main-classes {
@@ -474,7 +400,7 @@ footer {
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-top: 3rem;
     transition: 100ms;
     transform: scale(1);
@@ -489,8 +415,20 @@ footer {
     object-fit: cover;
 }
 
+@media (max-width: 600px) {
+    .main-classes {
+        padding: 0rem;
+    }
+    .main-classes .grid-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+}
 
-/* CONTAINER PAGE --------------------------------------------------------- */
+
+/* CONTACT PAGE --------------------------------------------------------- */
 .main-contact {
     background-color: rgb(0, 79, 110);
     margin-top: 3rem;
@@ -512,25 +450,42 @@ footer {
 
 /* Contact form styling */
 .contact-form {
-    flex-basis: 40%;
+    display: flex;
     padding: 2rem;
-    background-color: rgb(0, 79, 110);
-    width: 100%;
-    color: white;
+    color: #000;
     margin-left: 3rem;
-    border-radius: 5px;
-    box-shadow: 0 0 20px #999;
 }
+
+.getin-contact h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+  
+.formleft {
+    flex-basis: 40%;
+    margin: 2rem;
+}
+
+.formright {
+    flex-basis: 40%;
+    margin: 2rem;
+}
+
 .contact-form input {
-    width: 50%;
+    padding: 2rem;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .contact-form textarea {
-    min-height: 50px;
+    min-height: 18rem;
     width: 100%;
+    padding: 2rem;
+    font-size: 1.5rem;
     border-radius: 5px;
+    border: none;
 }
 
 .contact-form input[type=reset] {
@@ -541,12 +496,21 @@ footer {
 }
 
 .contact-form input[type=submit] {
-    width: 50%;
+    width: 60%;
     padding: 0.5rem;
     margin-right: 0.5rem;
     background-color: white;
+    color: rgba(0, 79, 110, 1);
 }
 
+.contact-form input[type=submit]:hover {
+    background-color: rgb(254, 231, 57);
+}
+
+.contact-form label {
+    font-size: 1.5rem;
+    color: rgba(0, 79, 110, 1);
+}
 
 /* MEMBERSHIP PAGE ---------------------------------------------------------- */
 
@@ -568,7 +532,7 @@ footer {
 
 }
 
-.pricing .content{
+.pricing .content {
     margin-bottom: 0;
 }
 
@@ -579,8 +543,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -150px;
-    margin-bottom: -100px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .price-comparison {
@@ -717,6 +681,26 @@ footer {
     transform: scale(1.1);
 }
 
+@media (max-width: 600px) {
+    .pricing-body {
+        flex-direction: column;
+    }
+
+    .price-comparison {
+        flex-direction: column;
+    }
+
+    .price-column {
+        flex-direction: column;
+        margin-bottom: 3rem;
+        max-width: 100%;
+    }
+
+    .price-column.popular {
+        margin-bottom: 2rem;
+    }
+}
+
 /* CLASS TIMETABLE ------------------------------------------ */
 
 .class-timetable {
@@ -822,4 +806,35 @@ footer {
 
 .faq-page h1 {
     color: rgb(0, 79, 110);
+}
+
+
+
+
+/* RESPONSIVE -------------------------------------------------------- */
+
+
+@media (max-width: 600px) {
+    .intro h1 {
+        font-size: 4rem;
+    }
+    
+    .all-class-btn {
+        max-width: 80%;
+    }
+    
+    .contact-map {
+        flex-grow: 1;
+        max-width: 80%;
+    }
+
+    .contact-map iframe {
+        max-width: 100%;
+    }
+
+    .content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
 }

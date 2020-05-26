@@ -8,32 +8,32 @@ header .menu-icon {
 }
 
 header .menu-icon .nav-icon { 
-    background: rgb(0, 79, 110);
+    background: rgb(4, 97, 134);
     display: block;
-    height: 3px;
-    width: 22px;
+    height: 5px;
+    width: 35px;
     position: relative;
     transition: background .2s ease-out;
 }
 
 header .menu-icon .nav-icon:before,
 header .menu-icon .nav-icon:after {
-    background: rgb(0, 79, 110);
+    background: rgb(4, 97, 134);
     content:"";
     display: block;
     height: 100%;
     width: 100%;
     position: absolute;
     transition: all .2s ease-out;
-    top: 5px;
+    top: 10px;
  }
 
  header .menu-icon .nav-icon:after {
-    top: -5px;
+    top: -10px;
  }
 
  header .menu-icon .nav-icon:before {
-    top: 5px;
+    top: 10px;
  }
 
  header .menu-btn {  /* The checkbox */
@@ -41,7 +41,7 @@ header .menu-icon .nav-icon:after {
  }
 
  header .menu-btn:checked ~ ul {  /* menu checked state */
-     max-height:500px;
+     max-height:1000px;
      padding: 2rem 0;
  }
 
@@ -57,23 +57,4 @@ header .menu-icon .nav-icon:after {
 header .menu-btn:checked ~ .menu-icon .nav-icon:after { /* top line */
     transform: rotate(45deg);
     top: 0;
-}
-
-/* Responsive properties */ 
-
-@media (min-width:56em) {
-    header li {
-        float: left;
-    }
-
-    header ul {
-        clear: none;
-        float: right;
-        max-height: none;
-        padding: 1rem;
-    }
-
-    header .menu-icon {
-        display: none;
-    }
 }
