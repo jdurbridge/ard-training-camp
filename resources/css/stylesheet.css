@@ -18,21 +18,7 @@ h2 {
     font-size: 3rem;
 }
 
-@media (max-width:600px) {
-    .logo {
-        font-size: 1rem;
-    }
-    .h1 {
-        font-size: 2rem;
-    }
-    .h2 {
-        font-size: 1.5rem;
-    }
 
-    .h3 {
-        font-size: 1rem;
-    }
-}
 
 /* Colours 
 
@@ -109,7 +95,21 @@ header ul {
     transition: 0.2s ease-out;
 }
 
+@media (max-width:600px) {
+    .logo {
+        font-size: 1rem;
+    }
+    .h1 {
+        font-size: 2rem;
+    }
+    .h2 {
+        font-size: 1.5rem;
+    }
 
+    .h3 {
+        font-size: 1rem;
+    }
+}
 
 
 /* FOOTER */
@@ -208,8 +208,6 @@ footer {
     .classes h2  {
         font-size: 1.5rem;
     }
-
-   
 }
 
 
@@ -819,6 +817,7 @@ footer {
         font-size: .9rem;;
         width: 100%;
         table-layout: fixed;
+    }
 }
 
 /* CLASS PAGE (template styling for all) --------------------------------------------- */
@@ -876,8 +875,6 @@ footer {
 
 
 /* RESPONSIVE -------------------------------------------------------- */
-
-
 @media (max-width: 600px) {
     .intro h1 {
         font-size: 4rem;
@@ -900,5 +897,4 @@ footer {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-
 }
