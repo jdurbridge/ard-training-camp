@@ -558,11 +558,12 @@ footer {
         margin: 0;
     }
 
-    .contact-form textarea {
+    .contact-form textarea,
+    .contact-form input {
         max-width: 250px;
     }
 
-    .contact-form input[type=submit],
+    .contact-form input[type=reset],
     .contact-form input[type=submit] {
         -webkit-appearance: none;
     }
