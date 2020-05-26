@@ -339,31 +339,36 @@ footer {
 .about-container {
     margin-top: 3rem;
     display: flex;
+    flex-direction: row;
+    height: 800px;
 }
 
 .about-intro {
-    flex-basis: 70%;
+    flex-basis: 50%;
     background-color: rgba(0, 79, 110, 1);
     padding: 2rem;
 }
 
 .about-intro p {
-    width: 60%;
+    width: 80%;
 }
 
 .about-intro h3, .about-intro p {
     color: white;
 }
 
-.about-logo {
+.about-image {
     background-color: white;
-    flex-basis: 30%;
-    text-align: center;
+    flex-basis: 50%;
+    display: block;
+   
+  
 }
 
-.about-logo img {
-    max-width: 125px;
-    padding: 4rem;
+.about-image img {
+    height: 100%;
+    width:100%;
+    object-fit: cover;
 }
 
 .coaches {
@@ -395,11 +400,21 @@ footer {
 @media (max-width: 600px) {
     .about-container {
         flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     .about-intro p {
         width: 90%;
     }
+
+    .about-image {
+        margin-bottom: 2rem;
+    }
+
+    .coaches h2 {
+        margin-top: 16rem;
+    }
+
 }
 
 /* CLASSES PAGE ---------------------------------------------------------- */ 
