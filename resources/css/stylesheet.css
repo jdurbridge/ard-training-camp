@@ -561,6 +561,11 @@ footer {
     .contact-form textarea {
         max-width: 250px;
     }
+
+    .contact-form input[type=submit],
+    .contact-form input[type=submit] {
+        -webkit-appearance: none;
+    }
 }
 
 /* MEMBERSHIP PAGE ---------------------------------------------------------- */
