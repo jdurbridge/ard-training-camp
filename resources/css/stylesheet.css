@@ -442,10 +442,13 @@ footer {
 .location-box {
     padding: 1rem;
     margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
 }
 
 .location-box img {
-    max-height: 250px;
+    max-height: 200px;
 }
 
 /* Contact form styling */
@@ -454,6 +457,7 @@ footer {
     padding: 2rem;
     color: #000;
     margin-left: 3rem;
+    margin-top: -4rem;
 }
 
 .getin-contact h3 {
@@ -510,6 +514,29 @@ footer {
 .contact-form label {
     font-size: 1.5rem;
     color: rgba(0, 79, 110, 1);
+}
+
+@media (max-width: 600px) {
+    .getin-contact h3 {
+        font-size: 2rem;
+        max-width: 400px;
+        padding: 1rem;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .formleft,
+    .formright {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .contact-form textarea {
+        max-width: 300px;
+    }
 }
 
 /* MEMBERSHIP PAGE ---------------------------------------------------------- */
