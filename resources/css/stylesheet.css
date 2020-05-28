@@ -197,6 +197,7 @@ footer {
     margin-bottom: 2rem;
     transition: 100ms;
     transform: scale(1);
+    cursor: pointer;
 }
 
 .intro-btn:hover {
@@ -259,6 +260,22 @@ footer {
 
 .all-class-btn:hover {
     transform: scale(1.1);
+}
+
+/* FEATURED SECTION */
+
+.featured {
+    background-color: rgb(0, 79, 110);
+}
+
+.featured h1 {
+    margin-top: 2rem;
+    padding-top: 3rem;
+}
+
+.featured .grid-container {
+    padding-bottom: 4rem;
+    margin-bottom: 0;
 }
 
 
@@ -340,7 +357,7 @@ footer {
     margin-top: 3rem;
     display: flex;
     flex-direction: row;
-    height: 800px;
+
 }
 
 .about-intro {
@@ -361,13 +378,11 @@ footer {
     background-color: white;
     flex-basis: 50%;
     display: block;
-   
-  
 }
 
 .about-image img {
-    height: 100%;
-    width:100%;
+    max-width: 100%;
+    min-height: 100%;
     object-fit: cover;
 }
 
@@ -397,6 +412,19 @@ footer {
     margin: 1rem;
 }
 
+.trainers .grid-containers{
+    justify-content: space-around;
+   
+}
+
+.trainer-box {
+    flex-basis: 30%;
+    background-color:white;
+    padding: 1rem;
+    margin: 1rem auto;
+    justify-content: space-around;
+}
+
 @media (max-width: 600px) {
     .about-container {
         flex-direction: column;
@@ -408,11 +436,12 @@ footer {
     }
 
     .about-image {
-        margin-bottom: 2rem;
+        margin-bottom: 0;
+        background-color: #999;
     }
 
     .coaches h2 {
-        margin-top: 16rem;
+        margin-top: -2rem;
     }
 
 }
@@ -851,12 +880,14 @@ footer {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    align-items: center;
+    justify-content: center;
   }
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
-    float: left;
+    width: 12%;
     border: none;
     outline: none;
     cursor: pointer;
