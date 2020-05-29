@@ -524,11 +524,12 @@ footer {
     padding: 2rem;
     color: #000;
     margin-left: 3rem;
+    margin-right: 2rem;
     margin-top: -4rem;
 }
 
 .getin-contact h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
   
@@ -543,18 +544,18 @@ footer {
 }
 
 .contact-form input {
-    padding: 2rem;
+    padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .contact-form textarea {
     min-height: 18rem;
     width: 100%;
-    padding: 2rem;
-    font-size: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
     border-radius: 5px;
     border: none;
 }
@@ -564,14 +565,16 @@ footer {
     padding: 0.5rem;
     margin-right: 0.5rem;
     background-color: white;
+    cursor: pointer;
 }
 
 .contact-form input[type=submit] {
-    width: 60%;
+    width: 40%;
     padding: 0.5rem;
     margin-right: 0.5rem;
     background-color: white;
     color: rgba(0, 79, 110, 1);
+    cursor: pointer;
 }
 
 .contact-form input[type=submit]:hover {
@@ -630,6 +633,7 @@ footer {
 }
 .pricing h2 {
     text-align: center;
+    font-size: 2rem;
 
 }
 
