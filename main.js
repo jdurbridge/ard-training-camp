@@ -1,3 +1,4 @@
+// CLASSES TABS ---------------------------------------------------//
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -18,3 +19,9 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+
+
+
+
+
